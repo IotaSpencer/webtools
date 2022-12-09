@@ -1,0 +1,3 @@
+[console_scripts]
+webtools = webtools.__main__:main
+

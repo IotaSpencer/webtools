@@ -1,0 +1,8 @@
+setup.py
+webtools/__init__.py
+webtools.egg-info/PKG-INFO
+webtools.egg-info/SOURCES.txt
+webtools.egg-info/dependency_links.txt
+webtools.egg-info/entry_points.txt
+webtools.egg-info/requires.txt
+webtools.egg-info/top_level.txt

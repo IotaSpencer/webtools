@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block extra_page_items %}
+    <li class="nav-item dropdown" id="tools-dropdown">
+        <a class="nav-link dropdown-toggle" href="{{ '#' }}" data-toggle="dropdown">/list-tools</a>
+        <div class="dropdown-menu dropdown-menu-right bg-dark">
+{#            <a class="dropdown-header" href="/portfolio/">Portfolio Page</a>#}
+{#            <div class="dropdown-divider" style="border-color: darkgreen;"></div>#}
+
+            {% for item in g.page.tools %}
+                <a class="dropdown-item" href="/tools/{{ item.slug }}">{{ item.short }}</a>
+            {% endfor %}
+        </div>
+    </li>
+{% endblock extra_page_items %}
+{% if error_404 == True %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">404 Error</h1>
+                <h2 class="text-center">Tool Not Found</h2>
+            </div>
+        </div>
+    </div>
+{% endif %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>{{ title }}</h1>
+                <p>{{ message }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+</body>
+</html>
