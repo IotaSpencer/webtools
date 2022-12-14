@@ -3,7 +3,6 @@ page:
   description: Different utilities
 
 tools:
-
   - slug: '/passgen'
     short: 'Passgen'
     long: 'Password Generator'
